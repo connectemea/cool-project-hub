@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Cera Pro";
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "Cera Pro";
+    src: url(./Font/CeraPro/Cera\ Pro\ Medium.otf);
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+a{
+    text-decoration: none;
+}
+.nav-bar{
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-bar span{
+    font-weight: 500;
+    font-size: 12px;
+    padding: 10px;
+    color: #4f154b;
+}
+.logo{
+    width: 70px;
+    margin: 3px;
+}
+.section-1{
+    background-image: url(./images/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100% - 45px);
+    display: flex;
+    padding-top: 15%;
+    padding-left: 15%;
+  
+    
+}
+.search-box input{
+    outline: none;
+    border: none;
+    width: 90%;
+    transform: translateY(-2px);
+}
+.search-box{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    padding: 3px;
+    padding-left: 9px;
+    border-color: #a6a6a6;
+    width: 22.5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.search-box i{
+    padding-right: 5px;
+    color: #4e4e4e;
+}
+.sec-1-text{
+    color: white;
+    max-width: 380px;
+}
+.sec-1-text h1{
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 57px;
+}
+.sec-1-text h2{
+    font-size: 29px;
+}
+.sec-1-text p{
+    font-size: 12px;
+}
+
+.section-2{
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.scroll-section{
+    display: flex;
+}
+.sale-box-scroll{
+    display: flex;
+    overflow: auto;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.scroll-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -85px;
+    padding: 25px;
+}
+.scroll-btn{
+    font-size: 35px;
+    background: linear-gradient(135deg, #B45CE3, #651AD8 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sale-box-scroll{
+    display: flex;
+    overflow: auto;
+
+}
+.sale-box-1{
+    width: 415px;
+    height: 255px;
+    border-radius: 35px;
+    padding: 25px;
+    margin-right: 40px;
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position:relative;
+    flex-shrink: 0;
+}
+.sale-box-1 img{
+    position:absolute;
+    top:8px;
+    right: 16px;
+    width: 50%;
+}
+.sale-box-1-violet{
+    position: absolute;
+    width: 45%;
+    height: 85%;
+    display:flex;
+    padding:7%;
+    justify-content:center;
+    flex-direction:column;
+    background-color: rgba(149,118,212,0.8);
+    border-radius: 28px;
+    color: white;
+    z-index: 3;
+    
+}
+.sale-box-1-violet p{
+    font-size: 9.5px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    margin: 19px 0;
+}
+.sale-box-1-violet a{
+    color: white;
+}
+.trailer-button{
+    font-size: 10px;
+    border: solid;
+    border-radius: 30px;
+    border-width: 1px;
+    height: 25px;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.section-3{
+    margin: 9% 15%;
+    display: flex;
+    flex-direction: column;
+}
+.sale-grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    justify-content: center;
+}
+.sale-grid-box{
+    background-image: url(./images/GameImages/call-of-duty.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 245px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 25px 25px 0;
+    color: white;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+.sale-grid-box:nth-child(2){
+    background-image: url(./images/GameImages/fifa\ 20.jpg);
+}
+.sale-grid-box:nth-child(3){
+    background-image: url(./images/GameImages/Watch-Dogs-Legion.jpg);
+}
+.sale-grid-box:nth-child(4){
+    background-image: url(./images/GameImages/battleground-mobile-india.jpeg);
+}
+.sale-grid-box:nth-child(5){
+    background-image: url(./images/GameImages/Avengers.jpg);
+}
+.sale-grid-box:nth-child(6){
+    background-image: url(./images/GameImages/wasteland\ 3.jpg);
+}
+.sale-grid-box:nth-child(7){
+    background-image: url(./images/GameImages/mount&blade\ ii.jpg);
+}
+.sale-grid-box:nth-child(8){
+    background-image: url(./images/GameImages/biomutant.jpg);
+}
+.sale-grid-box:nth-child(9){
+    background-image: url(./images/GameImages/ghost\ of\ tsushima.jpg);
+}
+.sale-grid-box:nth-child(10){
+    background-image: url(./images/GameImages/yakuza.jpg);
+}
+.sale-grid-box:nth-child(11){
+    background-image: url(./images/GameImages/Halo-Infinite.jpg);
+}
+.sale-grid-box:nth-child(12){
+    background-image: url(./images/GameImages/resident-evil-resistance-review_nzqd.jpg);
+}
+.sale-grid-box h4{
+    font-size: 13.5px;
+    font-weight: 800;
+    line-height: 13.6px;
+    margin: 9px 6px;
+}
+.grid-prices{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-button{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 82px;
+    height: 28px;
+    padding: 6px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #B45CE3, #651AD8);
+    z-index: 1;
+}
+.grid-discount{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #0cde23;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+}
+.grid-discount::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: #0cde23;
+    opacity: .5;
+    z-index: -1;
+}
+.view-more-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(95deg, #B45CE3, #651AD8 );
+    color: white;
+    width: 160px;
+    height: 36px;
+    border-radius: 20px;
+}
+.section-4{
+    margin: 8% 15%;
+    display: flex;
+    align-items: center;
+}
+.sec-4-img{
+    width: 50%;
+}
+.sec-4-image{
+    position: relative;
+    width: 100%;
+}
+.sec-4-img-bg{
+    position: absolute;
+    z-index: -1;
+    width: 92%;
+    transform: rotate(215deg);
+    left: 35px;
+    top: 20px;
+
+}
+.sec-4-text{
+    color: rgb(53, 52, 52);
+    max-width: 55%;
+    position: relative;
+    padding: 40px;
+    padding-bottom: 80px;
+}
+.sec-4-text h1{
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 57px;
+}
+.sec-4-text h2{
+    font-size: 29px;
+}
+.sec-4-text p{
+    font-size: 12px;
+    font-weight: 500;
+    margin: 18px 0;
+}
+.sec-4-purple-bg{
+    width: 90%;
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+    right: -80px;
+    transform: rotate(181deg);
+}
+.review-section{
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.review-scroll-section{
+    display: flex;
+}
+.review-scroll{
+    display: flex;
+    align-items: flex-end;
+    overflow: auto;
+    height: 233px;
+}
+.review-scroll-box{
+    width: 415px;
+    height: 200px;
+    border-radius: 35px;
+    margin-right: 30px;
+    background-color: rgba(232, 232, 232, 0.5);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 38px;
+    padding-top: 50px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+.review-profile-bg{
+    position: absolute;
+    top: -28px;
+    left: 29px;
+}
+.review-profile-bg img{
+    width: 73px;
+}
+.review-profile{
+    background-color: yellow;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: -25px;
+    z-index: 3;
+}
+.review-profile img{
+    width: 59px;
+}
+.news-section{
+    margin: 7% 15%;
+}
+.news-scroll{
+    width: 100%;
+    height: 500px;
+    margin: 35px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.news-box-big{
+    background-image: url(./images/GameImages/Fortnite-Epic-Games-Image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 47%;
+    height: 100%;
+    padding: 32px;
+    border-radius: 15px;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.news-heading{
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+.news-body{
+    font-size: .75em;
+}
+.news-box-sec-2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.news-box-small{
+    background-image: url(./images/GameImages/frosty-fortnite-arctic.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 47.5%;
+    padding: 25px;
+    border-radius: 15px;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.news-box-small:nth-child(2){
+    background-image: url(./images/GameImages/fortnite-nfl-gridiron.jpg);
+}
+.news-date{
+    background-color: #fff000;
+    color: rgb(29, 29, 29);
+    margin-bottom: 10px;
+    width: 160px;
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 15px;
+    padding-right: 15px;
+    margin-left: -78px;
+    font-size: .7em;
+}
+.section-7{
+    background-image: url(./images/background_bottom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin-top: -9%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.bottom-image{
+    overflow: hidden;
+    height: 92%;
+    margin-right: -45px;
+    margin-left: -55px;
+}
+.bottom-image img{
+   height: 102%;
+}
+.bottom-trailer-section{
+    width: 28%;
+    height: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bottom-trailer-image{
+    background-image: url(./images/GameImages/fortnite.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 46%;
+    margin-bottom: 4%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-trailer-text{
+    color: white;
+}
+.bottom-trailer-text h3{
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: 800;
+    padding: 4% 0;
+}
+.sec-7-violet-front{
+    position: absolute;
+    width: 510px;
+    opacity: .2;
+    left: 50px;
+    bottom: -21px;
+}
+.footer{
+    height: 75px;
+    width: 100%;
+    padding: 0 10%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer span{
+    font-weight: 500;
+    font-size: 12px;
+    padding: 10px;
+    color: white;
+}
+.footer p{
+    color: white;
+    font-size: .6em;
+}
+.social-media{
+    font-size: 1.5em;
+    letter-spacing: .2em;
+}
+.social-media a{
+    color: #7f7f7f;
+}
+.social-media a:hover{
+    color: #fff000;
+}
