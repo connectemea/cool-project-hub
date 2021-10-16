@@ -122,7 +122,16 @@ input[type="submit"]:hover{
     color: #2691d9;
     text-decoration: none;
 }
-
+.recent{
+    padding-top: 8px;
+     padding-bottom: 0%; 
+     padding-left: 0%; 
+     padding-right: 0%;
+    font-size: 13px; 
+    padding-right: 10px; 
+    padding-top: 5px; 
+    padding-bottom: 0;
+}
 .signup_link a:hover{
     text-decoration: underline;
 }
