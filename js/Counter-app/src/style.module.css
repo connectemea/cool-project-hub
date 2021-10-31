@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.contentWrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: #4292e7;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+.container h3{
+    margin-bottom: 25px;
+}
+.addSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+.addSection input{
+    height: 45px;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    width: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.addSection input:focus{
+    box-shadow: 2px 2px 12px rgb(0, 0, 0,  50%);
+    transition: ease-in 0.15s;
+}
+.addSection input:focus-visible{
+    outline: none;
+}
+
+
+
