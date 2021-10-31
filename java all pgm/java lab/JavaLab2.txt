@@ -1,0 +1,182 @@
+ //9
+
+import java.util.Scanner;
+
+    public class Transpose
+
+    {
+
+        public static void main(String args[])  
+
+        {
+
+    	int i, j,sum=0;
+
+    	System.out.println("Enter total rows and columns: ");
+
+    	Scanner s = new Scanner(System.in);
+
+    	int row = s.nextInt();
+
+    	int column = s.nextInt();
+
+    	int array[][] = new int[row][column];
+
+    	System.out.println("Enter matrix:");
+
+     	for(i = 0; i < row; i++)
+
+      	{
+
+       	    for(j = 0; j < column; j++) 
+                   
+	{
+         	  
+            	array[i][j] = s.nextInt();
+	 if(i == j){
+	         sum=sum+array[i][j];
+	         
+	    }
+	
+            	System.out.print(" ");
+	}
+
+      	}
+	
+
+    	System.out.println("The above matrix before Transpose is ");
+
+      	for(i = 0; i < row; i++)
+
+        	{
+
+          	    for(j = 0; j < column; j++)
+
+                {
+
+              	System.out.print(array[i][j]+" ");
+
+                }
+
+                System.out.println(" ");
+
+            }
+
+     	System.out.println("The above matrix after Transpose is ");
+
+      	for(i = 0; i < column; i++)
+
+        	{
+
+          	    for(j = 0; j < row; j++)
+
+                {
+
+                    System.out.print(array[j][i]+" ");
+
+                }
+
+                System.out.println(" ");
+
+            }
+System.out.println("Trace of the  matrix:" + sum);
+	
+        }
+
+    }
+---------------------------------------------------------------------
+
+//13
+
+import java.io.*;
+
+import java.util.*;
+
+class Student
+
+{
+
+   Scanner sc=new Scanner(System.in);
+
+   int RegNo,Total=0,subjects;
+   float Avg;
+   String name;
+
+   int marks[];
+
+   Student()
+
+   {
+
+      System.out.print("Enter Registration No.: ");
+
+      RegNo=sc.nextInt();
+
+      System.out.print("Enter Student Name: ");
+
+      name=sc.next();;
+
+      getDisMarks();
+
+   }
+
+   public void getDisMarks()
+
+   {
+
+       marks=new int[5];
+
+       System.out.print("Enter marks of Physics: ");
+
+       marks[0]=sc.nextInt();
+
+       System.out.print("Enter marks of Chemistry: ");
+
+       marks[1]=sc.nextInt();
+
+       System.out.print("Enter marks of Maths: ");
+
+       marks[2]=sc.nextInt();
+       System.out.print("Enter marks of  Englisgh: ");
+
+       marks[3]=sc.nextInt();
+      System.out.print("Enter marks of Language: ");
+
+       marks[4]=sc.nextInt();
+
+       for(int i=0;i<5;i++)
+
+       {
+
+          Total+=marks[i];
+       }
+       Avg = Total/5;
+System.out.println("Student Name: "+name);
+System.out.println("Register Number:"+RegNo);
+       System.out.println("Total Marks of student "+name+": " +Total);
+       System.out.println("Average of  "+name+": " +Avg);
+
+   }
+
+}
+
+class StudentDemo
+
+{
+
+    public static void main(String args[])
+
+    {
+
+        Student student=new Student();
+
+        
+
+       
+}
+    
+
+}
+
+-------------------------------------------------------------------------------------
+
